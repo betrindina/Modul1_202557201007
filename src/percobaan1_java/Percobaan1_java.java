@@ -17,7 +17,14 @@ public class Percobaan1_java {
             }
             System.out.println();
         }
-     
+        //mencari, jumlah, elemen dan rata-rata
+        double rata;
+        rata = (double) jumlah / elemen;
+        System.out.println("Jumlah Semua Elemen: " + jumlah);
+        System.out.println("Total Elemen: "+ elemen);
+        System.out.println("Rata-rata: "+ rata);
+        
+        
     }
     
 }
