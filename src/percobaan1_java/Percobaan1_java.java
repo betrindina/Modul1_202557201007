@@ -37,7 +37,20 @@ public class Percobaan1_java {
                 }
             }
         }
-        
+        if (ketemu) {
+            JOptionPane.showMessageDialog(null, "Nilai Ditemukan di Indeks: " + posisi);
+            int baru = Integer.parseInt(JOptionPane.showInputDialog("Masukkan Nilai Baru: "));
+            //ganti semua nilai yang sama
+            for (int a = 0; a < data.length; a++){
+                for (int b = 0; b < data[0].length; b++){
+                    if (data[a][b] == cari){
+                        data[a][b] = baru;
+                    }
+                }
+            }
+        }else {
+            JOptionPane.showMessageDialog(null, "Nilai Tidak Ditemukan!");
+        }
     }
     
 }
