@@ -51,6 +51,15 @@ public class Percobaan1_java {
         }else {
             JOptionPane.showMessageDialog(null, "Nilai Tidak Ditemukan!");
         }
+        System.out.println("\n=== ARRAY SETELAH PERUBAHAN ===");
+        for (int a = 0; a < data.length; a++){
+            for (int b = 0; b < data[0].length; b++){
+                System.out.print(data[a][b] + " ");
+            }
+            System.out.println();
+        }
     }
-    
 }
+        
+
+
