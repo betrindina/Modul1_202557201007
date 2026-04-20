@@ -21,6 +21,8 @@ public class Percobaan2 {
             for(int i = alamat.length(); i < 15; i++){
                 System.out.print(" ");
             }
+            //menampilkan no.telepon
+            System.out.println(telp);
         }
     }
 }
