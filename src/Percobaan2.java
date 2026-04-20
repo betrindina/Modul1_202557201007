@@ -16,7 +16,11 @@ public class Percobaan2 {
             for(int i = nama.length(); i < 10; i++){
                 System.out.print(" ");
             }
-           
+           //menampilkan alamat dan spasi
+            System.out.print(alamat);
+            for(int i = alamat.length(); i < 15; i++){
+                System.out.print(" ");
+            }
         }
     }
 }
