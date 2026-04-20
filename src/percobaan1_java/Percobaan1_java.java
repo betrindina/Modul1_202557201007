@@ -71,6 +71,16 @@ public class Percobaan1_java {
         System.out.println("Jumlah Setelah Perubahan: " + jumlahBaru);
         System.out.println("Total Elemen Setelah Perubahan: " + elemenBaru);
         System.out.println("Rata-rata Baru: " + rataBaru);
+        //jumlah elemen ganjil
+        int ganjil = 0;
+        for (int a = 0; a < data.length; a++){
+            for (int b = 0; b < data[0].length; b++){
+                if (b % 2 == 1) {
+                    ganjil += data[a][b];
+                }
+            }
+        }
+        System.out.println("Jumlah Elemen Dengan Indeks Kolom Ganjil: " + ganjil);
     }
 }
         
