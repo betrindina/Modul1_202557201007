@@ -24,6 +24,19 @@ public class Percobaan1_java {
         System.out.println("Total Elemen: "+ elemen);
         System.out.println("Rata-rata: "+ rata);
         
+        //untuk menentukan nilai yang dicari
+        int cari = Integer.parseInt(JOptionPane.showInputDialog("Masukkan Nilai Yang Dicari: "));
+        //mengecek kebenaran
+        boolean ketemu = false;
+        String posisi = ""; //menyimpan semua indeks
+        for (int a = 0; a < data.length; a++){
+            for (int b = 0; b < data[0].length; b++){
+                if (data [a][b]== cari){
+                    ketemu = true;
+                    posisi += " [" + a +","+ b + "] ";
+                }
+            }
+        }
         
     }
     
