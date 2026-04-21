@@ -24,6 +24,15 @@ public class Percobaan1_java {
         System.out.println("Total Elemen: "+ elemen);
         System.out.println("Rata-rata: "+ rata);
         
+        //Jumlah elemen indeks ganjil
+        int ganjill = 0;
+        for (int a = 0; a < data.length; a++){
+            for (int b = 0; b < data[0].length; b++){
+                if (b % 2 == 1){
+                    ganjill += data[a][b];
+                }
+            }
+        }
         //untuk menentukan nilai yang dicari
         int cari = Integer.parseInt(JOptionPane.showInputDialog("Masukkan Nilai Yang Dicari: "));
         //mengecek kebenaran
@@ -37,6 +46,8 @@ public class Percobaan1_java {
                 }
             }
         }
+        System.out.println("Jumlah Elemen Indeks Ganjil: " + ganjill);
+        
         if (ketemu) {
             JOptionPane.showMessageDialog(null, "Nilai Ditemukan di Indeks: " + posisi);
             int baru = Integer.parseInt(JOptionPane.showInputDialog("Masukkan Nilai Baru: "));
@@ -71,7 +82,7 @@ public class Percobaan1_java {
         System.out.println("Jumlah Setelah Perubahan: " + jumlahBaru);
         System.out.println("Total Elemen Setelah Perubahan: " + elemenBaru);
         System.out.println("Rata-rata Baru: " + rataBaru);
-        //jumlah elemen ganjil
+        //jumlah elemen ganjil baru
         int ganjil = 0;
         for (int a = 0; a < data.length; a++){
             for (int b = 0; b < data[0].length; b++){
